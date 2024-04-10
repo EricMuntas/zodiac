@@ -18,8 +18,4 @@ Route::get('/', function () {
     return view('main');
 });
 
-/*
-Route::get('/', [ZodiacController::class, 'index'])->name('main');
-Route::get('/forecast/{sign}/{time}', [ZodiacController::class, 'forecast'])->name('forecast');
-*/
 Route::get('/horoscope', [HoroscopeController::class, 'show'])->name('horoscope.show');
